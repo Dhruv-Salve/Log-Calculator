@@ -5,7 +5,7 @@ using namespace std;
 class calc
 {
 public:
-    int counter = 0,a = 0;                           // Useful for maintaining history of calculations
+    int counter = 0,temp = 0;                           // Useful for maintaining history of calculations
     float a, b, c, hold;                       // On time variables used for calculation
     float result[100], prevA[100], prevB[100]; //To Store the history of calculations
     char operators, prevOP[100];
@@ -197,10 +197,10 @@ public:
         else
         {
             cout << "Press any key to exit...";
-            cin>>a;
+            cin>>temp;
         }
 
-        cin>>a;
+        cin>>temp;
         return 0;
     }
     int StoreMaintainedHistory()
@@ -221,7 +221,7 @@ public:
         fout.close();
         cout << "Saved in current directory. File named 'Logs.txt'" << endl;
         cout << "Press any key to exit...";
-        cin>>a;
+        cin>>temp;
         return 0;
     }
 };
