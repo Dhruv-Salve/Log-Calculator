@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
-#include <conio.h>
 using namespace std;
 class calc
 {
@@ -198,10 +197,10 @@ public:
         else
         {
             cout << "Press any key to exit...";
-            getch();
+            cin>>a;
         }
 
-        getch();
+        cin>>a;
         return 0;
     }
     int StoreMaintainedHistory()
@@ -222,7 +221,7 @@ public:
         fout.close();
         cout << "Saved in current directory. File named 'Logs.txt'" << endl;
         cout << "Press any key to exit...";
-        getch();
+        cin>>a;
         return 0;
     }
 };
