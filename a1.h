@@ -5,7 +5,7 @@ using namespace std;
 class calc
 {
 public:
-    int counter = 0;                           // Useful for maintaining history of calculations
+    int counter = 0,a = 0;                           // Useful for maintaining history of calculations
     float a, b, c, hold;                       // On time variables used for calculation
     float result[100], prevA[100], prevB[100]; //To Store the history of calculations
     char operators, prevOP[100];
